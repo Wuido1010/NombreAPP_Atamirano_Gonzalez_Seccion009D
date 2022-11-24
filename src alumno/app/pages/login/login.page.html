@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title >Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding">
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>Bienvenido Estudiante, inicie sesion. Si no tiene cuenta, dirijase a "Registrarse"</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+        <form [formGroup]="formularioLogin">
+
+          <ion-item>
+            <ion-label position="floating">Correo: </ion-label>
+            <ion-input type="email" formControlName="correo"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña: </ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button (click)="Ingresar()" expand="block" fill="outline" shape="round">
+          Ingresar
+        </ion-button>
+        <ion-item>
+          <ion-label>Recordar Usuario</ion-label>
+          <ion-toggle slot="end"></ion-toggle>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-buttons slot="end">
+      <ion-button [routerLink] = "['/registro']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

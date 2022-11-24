@@ -1,0 +1,14 @@
+ion-content::part(background) {
+    background: #99249C;
+  }
+  
+  ion-content::part(scroll) {
+    color: #fff;
+  }
+  .titulo{
+    font-size: xx-large;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    border-color: blueviolet;
+}

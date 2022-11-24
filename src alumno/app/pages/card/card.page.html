@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    
+    
+    <!--<ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/"
+        text="Back"
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>-->
+    <ion-title>Informacion Sobre RegistrAap</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titulo">Que es RegistrAap</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p class="parrafo"> 
+       RegistrAap es un software diseñado por 2 alumnos de Ingenieria en Informatica de DuocUC.
+       <br> 
+       El fin de esta aplicacion es registrar la asistencia de las clases diarias de manera informatica para facilitar este proceso al Docente.
+      </p>
+    
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-header>
+      <center><ion-card-title>VERSION PROFESOR</ion-card-title></center>
+    </ion-card-header>
+
+      <center><img src="assets/logo.jpg" class="imagen2"></center>
+  
+    <ion-card-content>
+      <center><p class="parrafo">
+      La sesion que actualmente se encuentra activa corresponde a la version Docente
+      </p></center>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-title class="titulo">Caracteristicas</ion-card-title>
+      <ion-item href="#">
+        <ion-icon slot="start" name="checkmark-done-outline" class="wifi"></ion-icon>
+        <ion-label>El sistema tiene asignadas las asignaturas y secciones de cada profesor.</ion-label>
+      </ion-item>
+
+      <ion-item href="#">
+        <ion-icon slot="start" name="diamond" class="walk"></ion-icon>
+        <ion-label>El sistema es portable, por lo cual puede ser usado en el sistema que el usuario desee</ion-label>
+      </ion-item> 
+
+      <ion-item  href="#">
+        <ion-icon slot="start" name="warning" class="warning"></ion-icon>
+        <ion-label>Para poder registrar asistencia de una clase, es el Docente el encargado de finalizar la asistencia </ion-label>
+      </ion-item>
+  </ion-card>
+
+
+
+</ion-content>

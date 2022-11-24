@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title slot="start">Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-grid>
+  <ion-row>
+    <ion-img src="assets/linea.png" class="imagen2"></ion-img>
+  </ion-row>
+</ion-grid>
+  
+  <br>
+  <br>
+  <br>
+  <p class="texto">Bienvenido a Asistencia en Linea, Si desea registrar la asistencia de un curso dirigase al menu, eliga 
+    la seccion correspondiente para que la aplicacion genere un codigo qr que deben escanear los alumnos para quedar presentes
+  </p>
+<br>
+<br>
+<br>
+<ion-item>
+  <ion-label>
+    <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/noticias" slot="end">
+      NOTICIAS DEL DIA
+    </ion-button>
+  </ion-label>
+</ion-item>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-button (click)="CerrarSe()" expand="block" fill="clear" shape="round">
+      Cerrar Sesión
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

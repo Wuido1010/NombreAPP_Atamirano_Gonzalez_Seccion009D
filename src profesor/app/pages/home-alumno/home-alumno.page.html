@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="assets/logo.jpg" class="imagen"></ion-img>
+  <br>
+  <br>
+  <center><ion-img src="assets/foto2.jpg" class="imagen2"></ion-img></center>
+  <p class="contenido">Aprete el boton de abajo para abrir la camara</p>
+  <center><ion-button color="" class="color_boton" size="2500cm" routerLink="/fotoqr" color="#4854e0">Escanear QR</ion-button></center>
+  <ion-list>
+    <ion-item *ngfor="let item of getdata">
+    {{item.nombre}}
+    </ion-item>
+  </ion-list>
+</ion-content>

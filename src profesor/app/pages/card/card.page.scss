@@ -1,0 +1,35 @@
+.parrafo{
+    color:black;
+    font-size: large;
+    font-style: italic;
+    
+}
+.imagen2{
+    height: 300px;
+    width: 300px;
+}
+.titulo{
+    color:black;
+    font-size: x-large;
+    font-style: italic;
+}
+.wifi{
+    color:green;
+}
+
+.walk{
+    color:aqua;
+}
+
+.warning{
+    color:red;
+}
+
+
+ion-content::part(background) {
+    background: #99249C;
+  }
+  
+  ion-content::part(scroll) {
+    color: black;
+  }

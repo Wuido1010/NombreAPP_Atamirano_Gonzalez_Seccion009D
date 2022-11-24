@@ -1,0 +1,18 @@
+.imagen{
+    height: 150px;
+    width: 150px;
+}
+.texto{
+    font-size: xx-large;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    border-color: black;
+}
+ion-content::part(background) {
+    background: #99249C;
+  }
+  
+  ion-content::part(scroll) {
+    color: #fff;
+  }

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="primary"></ion-icon>
+       </ion-button>
+    </ion-buttons>
+
+    
+    <ion-title >Asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <center><p class="texto">A continuación están las asignaturas asignadas a este usuario. Elija la asignatura correspondiente</p></center>
+
+<br>
+      <!-- Round -->
+      <center><ion-button shape="round" class="boton" color="#E033FF" routerLink="/secciones1">MODELAMIENTO BASE DE DATOS</ion-button></center>
+    
+      <br>
+      <!-- Round -->
+      <center><ion-button shape="round" class="boton" color="#E033FF" routerLink="/secciones1">CONSULTAS DE BASE DE DATOS</ion-button></center>
+    
+      <br>
+      <!-- Round -->
+      <center><ion-button shape="round" class="boton" color="#E033FF" routerLink="/secciones1">PL/SQL</ion-button></center>
+</ion-content>

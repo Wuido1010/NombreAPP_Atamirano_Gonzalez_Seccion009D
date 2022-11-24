@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-button (click)="mostrarMenu()">
+      <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-toolbar>
+    <ion-title color="primary">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-img src="assets/logo.jpg" class="imagen"></ion-img>
+  
+  
+  <center><ion-img src="assets/duoc.png" class="imagen2"></ion-img></center>
+  
+  <center><p class="asistencia">Asistencia en linea</p></center>
+
+  
+  <center><ion-button color="" class="color_boton" size="2500cm" routerLink="/fotoqr" color="#4854e0">Escanear QR</ion-button></center>
+  <br>
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" routerLink="/noticias" class="color_boton1" color="#4854e0">
+    Noticias
+  </ion-button>
+  <ion-button (click)="logout()" expand="block" fill="clear" shape="round" class="color_boton1" color="#4854e0">
+    salir sesión
+  </ion-button>
+</ion-content>
