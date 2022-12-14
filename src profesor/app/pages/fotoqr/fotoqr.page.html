@@ -8,4 +8,14 @@
   <ion-img src="assets/foto1.jpeg"   ></ion-img>
   <center><ion-button color="#4854e0" size="large" routerLink="/finalizar-asis" class="color_boton">Finalizar asistencia</ion-button></center>
 </ion-content>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <qrcode [qrdata]="qrCodeString"
+      [width]="256">
+
+      </qrcode>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
 

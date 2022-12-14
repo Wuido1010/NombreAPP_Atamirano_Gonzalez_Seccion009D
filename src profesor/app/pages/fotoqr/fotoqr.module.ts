@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { FotoqrPageRoutingModule } from './fotoqr-routing.module';
 
 import { FotoqrPage } from './fotoqr.page';
-
+import { QRCodeModule } from 'angularx-qrcode';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FotoqrPageRoutingModule
+    FotoqrPageRoutingModule,
+    QRCodeModule
   ],
   declarations: [FotoqrPage]
 })

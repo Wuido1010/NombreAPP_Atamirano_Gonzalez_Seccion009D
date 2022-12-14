@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'completado',
     loadChildren: () => import('./pages/completado/completado.module').then( m => m.CompletadoPageModule)
   },
+  {
+    path: 'finalizar',
+    loadChildren: () => import('./pages/finalizar/finalizar.module').then( m => m.FinalizarPageModule)
+  },
 ];
 
 @NgModule({

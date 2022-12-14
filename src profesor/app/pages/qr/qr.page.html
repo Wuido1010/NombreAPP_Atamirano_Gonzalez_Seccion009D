@@ -1,15 +1,15 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Foto qr</ion-title>
+    <ion-title>qr</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <br>
-  <br>
-  <br>
-  <center><ion-img src="assets/qr.png" class="tamano"></ion-img></center>
-  <br>
-  <br>
-  <center><ion-button color="primary" size="large" routerLink="/completado">Finalizar asistencia</ion-button></center>
+  <ion-card>
+    <ion-card-content>
+      <qrcode [qrdata]="QrCodeString" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </ion-card-content>
+    <ion-button  size="large" routerLink="/finalizar" >Finalizar asistencia</ion-button>
+  </ion-card>
+  
 </ion-content>

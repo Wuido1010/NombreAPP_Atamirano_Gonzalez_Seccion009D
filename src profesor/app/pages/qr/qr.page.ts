@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QrPage implements OnInit {
 
   constructor() { }
-
+  QrCodeString='Este mensaje es privado'
   ngOnInit() {
   }
 

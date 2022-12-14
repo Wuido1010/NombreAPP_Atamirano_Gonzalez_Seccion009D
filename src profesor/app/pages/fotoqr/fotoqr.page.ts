@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fotoqr.page.scss'],
 })
 export class FotoqrPage implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
